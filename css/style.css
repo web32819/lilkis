@@ -571,6 +571,33 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .lowerftr p a{color:#FFF;}
 .innrbnnr{}
 .innrbnnr img{width:100%; margin:0 auto; display:table;}
+.upprsctn{
+	position:relative;
+}
+.bluebx{
+	background:#2E6D99;
+	-webkit-border-bottom-left-radius: 50px;
+	-moz-border-radius-bottomleft: 50px;
+	border-bottom-left-radius: 50px;
+}
+.upprcntnr{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+	justify-content: flex-start;
+    align-content: space-between;
+	background:#171717;
+	padding:0;
+	-webkit-border-top-right-radius: 50px;
+	-webkit-border-bottom-left-radius: 50px;
+	-moz-border-radius-topright: 50px;
+	-moz-border-radius-bottomleft: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+.upprcntnrbx{flex:1 46%; padding:45px;}
+.upprcntnrbx h1{color:#FFF; font-weight:700; text-align:left;}
+.upprcntnrbx h2{color:#77BC48; text-align:left; font-size:24px; margin-bottom:15px;}
 /*MEDIA QUERY CSS STARTS HERE*/
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1440px){}
