@@ -571,9 +571,6 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .lowerftr p a{color:#FFF;}
 .innrbnnr{}
 .innrbnnr img{width:100%; margin:0 auto; display:table;}
-.upprsctn{
-	position:relative;
-}
 .bluebx{
 	background:#2E6D99;
 	-webkit-border-bottom-left-radius: 50px;
@@ -594,10 +591,52 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	-moz-border-radius-bottomleft: 50px;
 	border-top-right-radius: 50px;
 	border-bottom-left-radius: 50px;
+	position:relative;
+	margin-top:-114px;
+	left:0;
 }
 .upprcntnrbx{flex:1 46%; padding:45px;}
 .upprcntnrbx h1{color:#FFF; font-weight:700; text-align:left;}
 .upprcntnrbx h2{color:#77BC48; text-align:left; font-size:24px; margin-bottom:15px;}
+.bodysctn{background:#FFF;}
+.brdbx{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+	justify-content: flex-start;
+    align-content: space-between;
+}
+.brdtsxtbx{flex:0 32%;}
+.brdtsxtbx:first-child{flex-grow:1;}
+.brdtsxtbx h1{text-align:left;}
+.brdtsxtbx img{float:right;}
+.mngmntsctn{
+	margin-top:60px;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+	justify-content: flex-start;
+    align-content: space-between;
+}
+.mngmntsctnbx{
+	flex:0 33%;
+	background:#F8F5F3;
+	padding:35px 45px;
+	-webkit-border-top-right-radius: 50px;
+	-webkit-border-bottom-right-radius: 50px;
+	-moz-border-radius-topright: 50px;
+	-moz-border-radius-bottomright: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+.wrpprbx img{
+	-webkit-border-top-right-radius: 50px;
+	-webkit-border-bottom-right-radius: 50px;
+	-moz-border-radius-topright: 50px;
+	-moz-border-radius-bottomright: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
 /*MEDIA QUERY CSS STARTS HERE*/
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1440px){}
@@ -615,6 +654,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	}
 	.bannrTxtbox:before{left:0;}
 	.phlosphybx{flex: 1 46%;}
+	.innrbnnr img{height:485px;}
 }
 @media screen and (max-width:767px){
 	.fundbx{flex: 1 47%;}
