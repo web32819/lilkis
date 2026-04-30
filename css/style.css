@@ -419,6 +419,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	height: auto;
 	background:#FFF;
 	z-index:16;
+	box-shadow: 0 1px 5px #ccc;
 }
 .scrolled #myNavbar ul{border-bottom:none;}
 .bannersctn{
