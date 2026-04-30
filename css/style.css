@@ -240,7 +240,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .sidebar a {
     padding: 15px 20px;
     text-decoration: none;
-    color: #032E5D;
+    color: #2f6f97;
     display: block;
     line-height: 25px;
     border-bottom: 1px solid rgba(202,209,233,.85);
@@ -249,8 +249,8 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     text-transform: uppercase;
 	letter-spacing:0;
 }
-.sidebar a:hover{background-color:#032e5d; color:#FFF;}
-.sidebar a:focus{background-color:#032e5d; color:#FFF;}
+.sidebar a:hover{background-color:#2f6f97; color:#FFF;}
+.sidebar a:focus{background-color:#2f6f97; color:#FFF;}
 .sidebar a img{padding:0; outline:none;}
 .sidebar .closebtn {
 	color:#009fff;
