@@ -279,7 +279,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 #main button.openbtn svg{fill: #00a4fb; height:40px; margin-right:0; transition: transform 0.5s ease;}
 #main {
 	float: right;
-    margin-top: 0;
+    margin-top:12px;
     transition: margin-right .5s;
     position: relative;
     right: 0;
@@ -543,10 +543,10 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	font-size:15px;
 	font-weight:500;
 	display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: flex-start;
 }
-.lwrbxsctn ul li img{margin-right:25px; margin-top: 5px;}
+.lwrbxsctn ul li img{margin-right:20px; margin-top: 5px;}
 .lwrbxsctn ul li:last-child{border-bottom:none;}
 .whysctn{background:#F8F5F3;}
 .whysctnbx{
@@ -725,10 +725,10 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 		border-top-right-radius:50px;
 	}
 	.blusctnbx{flex:1 30%;}
+	.fndbxone{padding-left:30px;}
 }
 @media screen and (max-width:767px){
 	.fundbx{flex: 1 47%;}
-	.fndbxone{padding-left:30px;}
 	.bannrTxtbox{padding: 0 15px;}
 	.bannrBox{padding-left:30px;}
 	.mngmntsctnbx{flex:1 50%;}
