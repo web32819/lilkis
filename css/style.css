@@ -266,6 +266,9 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     outline: none;
     border: none;
 }
+.closebtn a svg{
+	fill:#000;
+}
 .sidebar .closebtn:hover{background-color:transparent;}
 .openbtn {
     cursor:pointer;
@@ -276,22 +279,28 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .openbtn:hover {background-color:transparent;}
 #main button.openbtn svg { transform: rotate(-180deg);}
-#main button.openbtn svg{fill: #00a4fb; height:40px; margin-right:0; transition: transform 0.5s ease;}
+#main button.openbtn svg{
+	fill: #7dbb52;
+    height: 30px;
+    margin-right: 0;
+    transition: transform 0.5s ease;
+}
 #main {
 	float: right;
-    margin-top:12px;
+    margin-top:6px;
     transition: margin-right .5s;
     position: relative;
     right: 0;
 }
 #main svg{
-	fill: #00a4fb;
-    height: 30px;
-    margin-right: 60px;
-    position: absolute;
+	fill: #171717;
+    height: 25px;
+    margin-right: 10px;
+    position: relative;
     bottom: 0;
     right: 0px;
-    top: 0;
+    top: 0px;
+    margin-top: 0;
 }
 /* ACCORDIAN CSS */
 .panel-group {margin-bottom: 0;}
