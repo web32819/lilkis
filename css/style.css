@@ -589,7 +589,35 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .fndbxone p{color:#373435; line-height:22px;}
 .fndbxone:last-child{margin-bottom:0; border-bottom:none;}
-.impctscn{background:#6DAA43;}
+.impctscn{background:#6DAA43; position:relative; overflow:hidden;}
+.impctscn:before{
+	content:'';
+	position:absolute;
+	background:url(../images/chart-tick.svg) no-repeat left ;
+	width:1732px;
+	height:521px;
+	top:0;
+	bottom:0;
+	z-index:0;
+	opacity: 0;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    transform: translateX(-80px);
+}
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* JS adds this class */
+.impctscn.animate:before {
+    opacity: 1;
+    transform: translateX(0);
+}
 .impctscn h1{
 	color:#FFF; 
 	text-align:left;
@@ -783,6 +811,8 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .lglbx p{line-height:22px; margin-bottom:0;}
 .investmntsctn .upprcntnr{background:transparent;}
 .investmntsctn .upprcntnr .upprcntnrbx{flex:0 46%;}
+.invstmntbx .whybx h4{color:#373435; font-size:18px; font-weight:600;}
+.invstmntbx .whybx p{font-size:13px;}
 /*MEDIA QUERY CSS STARTS HERE*/
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1440px){}
