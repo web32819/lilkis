@@ -925,7 +925,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     text-align: left;
     font-size: 16px;
     margin-bottom: 10px;
-    transform: translateY(5px);
+    transform: translateY(10px);
     transition: transform 0.4s ease 0.2s;
 }
 
@@ -934,7 +934,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     color: #000;
     text-align: left;
     margin-bottom: 20px;
-    transform: translateY(5px);
+    transform: translateY(10px);
     transition: transform 0.4s ease 0.3s;
 }
 
