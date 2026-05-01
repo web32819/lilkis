@@ -12,7 +12,6 @@
 <noscript><link rel="stylesheet" href="css/style.css"></noscript>
 <link href="css/hover.css" rel="stylesheet" media="all">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- InstanceBeginEditable name="head" -->
 <link rel="preload" as="image" href="images/banner.webp"/>
 <!-- InstanceEndEditable -->
@@ -521,6 +520,22 @@ $(function() {
 </script>
 
 <!-- InstanceBeginEditable name="EditRegion6" -->
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+        } else {
+            entry.target.classList.remove('animate');
+        }
+    });
+}, { threshold: 0.2 });
+
+// observe h1 also
+document.querySelectorAll('.phlosphybx, .phlosphysctn h1, .impctscn h1, .opprbx').forEach(el => {
+    observer.observe(el);
+});
+</script>
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>

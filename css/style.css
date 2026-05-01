@@ -455,7 +455,18 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     left: -30px;
 }
 .phlosphysctn{background:#2E6D99;}
-.phlosphysctn h1{text-align:left; color:#FFF;}
+.phlosphysctn h1 {
+	text-align:left;
+	color:#FFF;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.phlosphysctn h1.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
 .phlosphycntnr{
 	margin-top:90px;
 	display: flex;
@@ -468,13 +479,47 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .phlosphybx{flex:1 23%; padding:0 15px;}
 .phlosphybx img{margin-bottom:35px;}
+/* Remove animation from .phlosphybx directly */
+.phlosphybx {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Delay each box */
+.phlosphybx:nth-child(1) { transition-delay: 0.1s; }
+.phlosphybx:nth-child(2) { transition-delay: 0.3s; }
+.phlosphybx:nth-child(3) { transition-delay: 0.5s; }
+.phlosphybx:nth-child(4) { transition-delay: 0.7s; }
+
+/* When class is added by JS */
+.phlosphybx.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover */
+.phlosphybx:hover {
+    transform: translateY(-8px);
+}
+
+.phlosphybx img {
+    transition: transform 0.4s ease;
+}
+
+.phlosphybx:hover img {
+    transform: rotate(10deg) scale(1.1);
+}
 .opprtntsctn{
 	background:url(../images/opportunities/opprtunity-bg.webp) no-repeat left top;
 	background-size:cover;
 	height:100%;
 	background-attachment:fixed;
 }
-.opprtntsctn h1{color:#FFF; text-align:left;}
+.opprtntsctn h1{
+	color:#FFF; 
+	text-align:left;
+}
 .opprbxcntnr{
 	margin-top:90px;
 	display: flex;
@@ -492,6 +537,9 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
+	opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .opprbx hr{
 	height: 60px;
@@ -505,6 +553,20 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .opprbx .prgrphbx{padding:0 25px;}
 .opprbx .prgrphbx p{margin-bottom:0; font-weight:500; font-size:16px; }
 .opprbx:last-child{ flex: 0 56%;}
+.opprbx:nth-child(1) { transition-delay: 0.1s; }
+.opprbx:nth-child(2) { transition-delay: 0.3s; }
+.opprbx:nth-child(3) { transition-delay: 0.5s; }
+.opprbx:nth-child(4) { transition-delay: 0.7s; }
+.opprbx:nth-child(5) { transition-delay: 0.7s; }
+/* When class is added by JS */
+.opprbx.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Hover */
+.opprbx:hover {
+    transform: translateY(-8px);
+}
 .fundcntnr{
 	display: flex;
     flex-wrap: wrap;
@@ -528,7 +590,17 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .fndbxone p{color:#373435; line-height:22px;}
 .fndbxone:last-child{margin-bottom:0; border-bottom:none;}
 .impctscn{background:#6DAA43;}
-.impctscn h1{color:#FFF; text-align:left;}
+.impctscn h1{
+	color:#FFF; 
+	text-align:left;
+	opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.impctscn h1.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
 .lwrbx{background:url(../images/mandate-bg.jpg) no-repeat left top fixed; background-size:cover;}
 .lwrbx h1{color:#FFF; text-align:left;}
 .lwrbxcntnr{
