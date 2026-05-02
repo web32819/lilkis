@@ -846,7 +846,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .invstmntbx .whybx p{font-size:13px;}
 .exprtscntnr {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     align-items: stretch;
     align-content: space-between;
     justify-content: flex-start;
@@ -873,7 +873,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .exprtsbx:hover {
     background: #F8F5F3;         /* change to your color */
     border-color: transparent;
-	flex: 1 25%;   /* increases width on hover */
+	flex:3 45%;   /* increases width on hover */
 }
 
 .exprtsbx img {
@@ -905,10 +905,10 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 /* Hover text box — starts below */
 .hverbx {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding:40px;
     opacity: 0;
     transform: translateY(100%);
     transition: transform 0.5s ease, opacity 0.5s ease;
@@ -924,7 +924,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     color: #000;
     text-align: left;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom:30px;
     transform: translateY(10px);
     transition: transform 0.4s ease 0.2s;
 }
@@ -944,13 +944,103 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .hverbx ul li{
 	font-size: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     list-style-type: none;
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-start;
 }
 .hverbx ul li img{margin:5px 8px 0 0;}
+.keysctnbx{background:#F8F5F3;}
+.keyppl-content{padding:90px 0 0;}
+/* Tab Buttons */
+.keyppl-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    background: #F8F5F3;
+    border: 1px solid rgba(0,0,0,.15);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.tab-btn img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.tab-btn span {
+    font-size: 15px;
+    color: rgba(0,0,0,.6);
+    transition: color 0.3s ease;
+}
+
+/* Active Tab Button */
+.tab-btn.active {
+    background: #000;
+    border-color: #000;
+}
+
+.tab-btn.active span {color: #fff;}
+
+/* Tab Content */
+.tab-pane {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tab-pane.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Bio Layout */
+.bioxwrp {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.bioimgbx {flex: 0 0 300px;}
+
+.bioimgbx img {
+    width: 100%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.biotxtbx {flex: 1;}
+
+.biotxtbx h2 {
+	text-align:left;
+    font-size: 50px;
+    font-weight: 600;
+	line-height:90px;
+    color: #000;
+    margin-bottom:0;
+}
+.biotxtbx h4 {
+    color:#373435;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+.biotxtbx p {margin-bottom: 15px; color:#373435;}
 /*MEDIA QUERY CSS STARTS HERE*/
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1440px){}
