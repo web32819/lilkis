@@ -140,7 +140,13 @@ a:focus, a:hover {
     left: 0%;
     bottom: 0;
 }
-#myNavbar ul li.active a{background-color:transparent;}
+.nav.navbar-nav li.active a {
+    color: #2E6D99;                          /* change to your color */
+    border-bottom: 4px solid #6DAA43;        /* underline style */
+	background-color:transparent ;
+}
+.nav.navbar-nav li.active a:hover{background-color:transparent;}
+.nav.navbar-nav li.active a:focus{background-color:transparent;}
 .navbar-nav>li>.dropdown-menu{margin-top:0 !important;}
 @media screen and (min-width:992px) and (max-width:1199px){
 .nav>li>a {}

@@ -511,6 +511,17 @@ $(function() {
 
 </script>
 
+<script>
+var currentPage = window.location.pathname.split('/').pop();
+
+document.querySelectorAll('.nav.navbar-nav li a').forEach(function(link) {
+    var linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+        link.parentElement.classList.add('active');
+    }
+});
+</script>
+
 <!-- InstanceBeginEditable name="EditRegion6" -->
 <script>
 const observer = new IntersectionObserver((entries) => {
