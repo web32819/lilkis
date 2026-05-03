@@ -308,9 +308,21 @@ $(function() {
 <script>
 var currentPage = window.location.pathname.split('/').pop();
 
+// Remove .html if present
+currentPage = currentPage.replace('.html', '');
+
+// Handle homepage
+if (currentPage === '' || currentPage === 'index') {
+    currentPage = 'index';
+}
+
 document.querySelectorAll('.nav.navbar-nav li a').forEach(function(link) {
-    var linkPage = link.getAttribute('href');
-    if (linkPage === currentPage) {
+    var linkPage = link.getAttribute('href').replace('.html', '');
+
+    // Handle homepage link
+    if (linkPage === 'index' && currentPage === 'index') {
+        link.parentElement.classList.add('active');
+    } else if (linkPage === currentPage) {
         link.parentElement.classList.add('active');
     }
 });
