@@ -514,6 +514,13 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .opprtntsctn h1{
 	color:#FFF; 
 	text-align:left;
+	opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.opprtntsctn h1.animate{
+	opacity: 1;
+    transform: translateY(0);
 }
 .opprbxcntnr{
 	margin-top:90px;
@@ -572,7 +579,18 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	grid-row-gap:45px;
 }
 .fundbx{flex:1 46%;}
-.fundbx h1{text-align:left; line-height:65px; margin-bottom:60px;}
+.fundbx h1{
+	text-align:left; 
+	line-height:65px; 
+	margin-bottom:60px;
+	opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fundbx h1.animate{
+	opacity: 1;
+    transform: translateY(0);
+}
 .fundtxtbx{
 	position: relative;
     border-left: none; /* remove original border */
