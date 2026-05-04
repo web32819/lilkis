@@ -1090,6 +1090,85 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .sclwrprbx ul li a{background:rgba(0,0,0,.20); border-radius:100%; padding: 8px 10px 6px;}
 .sclwrprbx ul li a svg{height:15px; fill:#FFF;}
 .sclwrprbx ul li p{margin-bottom:0; font-weight:500; font-size:15px; color:#000; letter-spacing:2px;}
+.cntctsctn h1{text-align:left;}
+.cntcbxwrpr{
+	margin-top:90px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: stretch;
+	gap:25px;
+    align-content: space-between;
+}
+.cntcbxwrprsctn:last-child{flex-grow:1;}
+.cntcbxwrprsctn{flex:0 28%;}
+.cntcbxwrprsctn ul.nmbrbx{
+	padding-inline-start:0;
+	border-radius:15px;
+	border:1px solid rgba(129,129,129,.23);
+	padding:20px 30px;
+	display:table;
+	margin-bottom:50px;
+}
+.cntcbxwrprsctn ul.nmbrbx li{
+	list-style-type:none;
+	line-height:40px;
+	display: flex;
+    flex-wrap: nowrap;
+    align-items:center;
+}
+.cntcbxwrprsctn ul.nmbrbx li img{margin-right:10px;}
+.cntcbxwrprsctn ul.nmbrbx li a{color:#373435; font-size:18px; font-weight:600;}
+.addbx{margin-bottom:50px;}
+.addbx h4{font-size:18px; font-weight:600; color:#000;}
+.addbx p{color:#373435; font-size:16px; line-height:26px;}
+.form-box{margin:15px;}
+.form-box input{
+	border:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	border-bottom:1px solid rgba(0,0,0,.75);
+	border-radius:0;
+	-webkit-box-shadow:none;
+    box-shadow:none;
+	outline:none;
+	padding:15px 0;
+	height:50px;
+	font-size:16px;
+	font-weight:500;
+}
+.form-box .form-control::placeholder {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 18px;
+    font-weight: 500;
+}
+.form-box textarea{
+	width:100%;
+	height:200px;
+	max-height:200px;
+	border:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	border-bottom:1px solid rgba(0,0,0,.75);
+	border-radius:0;
+	padding:15px 0;
+	font-size:16px;
+	font-weight:500;
+	-webkit-box-shadow:none;
+    box-shadow:none;
+}
+.form-box button.lrnmr{
+	background:#6DAA43;
+	color:#FFF;
+	font-size:15px;
+	font-weight:600;
+	outline:none;
+	border:none;
+	text-transform:uppercase;
+	padding: 15px 45px;
+}
 /*MEDIA QUERY CSS STARTS HERE*/
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1440px){}
@@ -1153,6 +1232,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 		border-bottom:1px solid rgba(255,255,255,.20);
     }
 	.biotxtbx h2{margin-bottom:15px;}
+	.investmntsctn .upprcntnr .upprcntnrbx{flex:1 46%;}
 }
 @media (max-width:414px){}
 @media (max-width:394px){}
