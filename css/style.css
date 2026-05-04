@@ -1076,7 +1076,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     margin-bottom: 25px;
     font-weight: 500;
 }
-.biotxtbx p {margin-bottom: 15px; color:#373435;}
+.bodysctn .biotxtbx p {margin-bottom: 15px; color:#373435; text-align:left; font-weight:400;}
 .sclwrpr{
 	display: flex;
     flex-wrap: wrap;
