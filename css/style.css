@@ -1180,6 +1180,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .form-box button.lrnmr:hover{background:#2E6D99;}
 p.pargraptxt{color:#000; text-align:center; font-weight:600;}
+.disclaimer p{color:#000;}
 /*MEDIA QUERY CSS STARTS HERE*/
 @media only screen and (orientation:portrait){}
 @media screen and (max-width:1440px){}
