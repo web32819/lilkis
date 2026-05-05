@@ -237,7 +237,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	z-index: 999;
 	top: 0;
 	left: 0;
-	background:#EFF2F9;
+	background:#FFF;
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top:0;
@@ -739,8 +739,17 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	grid-row-gap:25px;
 }
 .whybx:first-child{flex:1 100%; background:#FFF;}
+.whybx{
+	border:1px solid rgba(0,0,0,.15); 
+	padding:25px; 
+	flex:1 28%; 
+	background:#F8F5F3;
+	transform: translateY(30px); 
+	transition: opacity 0.9s ease, transform 0.9s ease;
+	opacity:0;
+}
+.whybx.animate{opacity: 1; transform: translateY(0);}
 .whybx h1{text-align:left;}
-.whybx{border:1px solid rgba(0,0,0,.15); padding:25px; flex:1 28%; background:#F8F5F3;}
 .whybx img{margin-bottom:20px;}
 .whybx p{color:#373435; font-weight:500; font-size:16px; line-height:20px;}
 #footer{background:#171717;}
@@ -1202,6 +1211,7 @@ p.pargraptxt{color:#000; text-align:center; font-weight:600;}
 	.bioimgbx img{margin:0 auto;}
 	.bioimgbx:before{left:0;}
 	.tab-btn{flex: 1 19%;}
+	.cntcbxwrprsctn{flex: 0 43%;}
 }
 @media screen and (max-width:767px){
 	.fundbx{flex: 1 47%;}
@@ -1235,6 +1245,11 @@ p.pargraptxt{color:#000; text-align:center; font-weight:600;}
     }
 	.biotxtbx h2{margin-bottom:15px;}
 	.investmntsctn .upprcntnr .upprcntnrbx{flex:1 46%;}
+	.cntcbxwrpr{gap:0; margin-top:45px;}
+	.cntcbxwrprsctn{flex:1 43%;}
+	.cntcbxwrprsctn ul.nmbrbx{margin-bottom:25px; width:100%;}
+	.addbx { margin-bottom: 25px;}
+	.form-box{margin: 15px 0;}
 }
 @media (max-width:414px){}
 @media (max-width:394px){}
