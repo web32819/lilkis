@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>KLilkis CAPITAL AIF TRUST<</title>
+<title>Lilkis CAPITAL AIF TRUST<</title>
 <!-- InstanceEndEditable -->
 
 <!-- Preconnect first -->
@@ -371,7 +371,20 @@ document.querySelectorAll('.nav.navbar-nav li a').forEach(function(link) {
 </script>
 
 <!-- InstanceBeginEditable name="EditRegion6" -->
+<script>
+document.querySelectorAll('.exprtsbx').forEach(function(box) {
+    box.addEventListener('mouseenter', function() {
+        document.querySelectorAll('.exprtsbx').forEach(function(b) {
+            b.classList.remove('active');
+        });
+        this.classList.add('active');
+    });
 
+    box.addEventListener('mouseleave', function() {
+        this.classList.remove('active');
+    });
+});
+</script>
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
