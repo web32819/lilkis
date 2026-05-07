@@ -929,7 +929,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .namebx h3{font-size:24px; font-weight:500; color:#000; line-height:30px; text-align:left;  margin: 0 0 5px 0}
 .namebx p{color:#000; margin-bottom:0;}
-.blulstbx{background:#2E6D99;}
+.blulstbx{background:#2E6D99; margin-top: 60px;}
 .blusctncntnr{
 	display: flex;
     flex-wrap: wrap;
@@ -1315,8 +1315,9 @@ p.pargraptxt{color:#000; text-align:center; font-weight:600;}
     }
     .rightbx p{text-align: left; }
     .rightbx img{order:0;}
-    .scndtxtbx {border-radius: 100px 0 100px 0; margin-bottom:15px; padding: 70px 50px;}
+    .scndtxtbx {border-radius: 100px 0 100px 0; margin-bottom:15px; padding:70px 50px;}
 	.exprtsbx{flex: 1 100%; padding: 35px 35px;}
+	.investmntsctn .upprcntnr .upprcntnrbx { flex: 1 46%;}
 }
 @media screen and (max-width:767px){
 	.fundbx{flex: 1 47%;}
@@ -1352,7 +1353,6 @@ p.pargraptxt{color:#000; text-align:center; font-weight:600;}
 		border-bottom:1px solid rgba(255,255,255,.20);
     }
 	.biotxtbx h2{margin-bottom:15px;}
-	.investmntsctn .upprcntnr .upprcntnrbx{flex:1 46%;}
 	.cntcbxwrpr{gap:0; margin-top:45px;}
 	.cntcbxwrprsctn{flex: 1 52%;}
 	.cntcbxwrprsctn ul.nmbrbx{margin-bottom:25px; width:100%;}
