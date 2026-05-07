@@ -889,10 +889,10 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     transition-duration: .9s;
     display: inline-block;
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px #ccc;
+    box-shadow: 0 1px 14px #ccc;
 	cursor:pointer;
 }
-.mngmntsctnbx:hover{transform: scale(1.03); box-shadow: 0 10px 22px #ccc;}
+.mngmntsctnbx:hover{transform: scale(1.03); box-shadow: 0 1px 20px #ccc;}
 .wrpprbx{
 	margin-bottom: 0;
     position: relative;
@@ -1363,6 +1363,7 @@ p.pargraptxt{color:#000; text-align:center; font-weight:600;}
 	.cntcbxwrprsctn ul.nmbrbx{margin-bottom:25px; width:100%;}
 	.addbx { margin-bottom: 25px;}
 	.form-box{margin: 15px 0;}
+	.phlosphybx {flex: 1 47%;}
 }
 @media (max-width:414px){}
 @media (max-width:394px){}
