@@ -1051,7 +1051,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 }
 .hverbx ul li img { margin: 5px 8px 0 0; }
 .keysctnbx{background:#F8F5F3; padding-bottom:0;}
-.keyppl-content{padding:90px 0 0;}
+.keyppl-content{padding:90px 0 ;}
 /* Tab Buttons */
 .keyppl-tabs {
     display: flex;
@@ -1112,18 +1112,8 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     justify-content: flex-start;
 }
 .bioimgbx {flex:1 0 0; position:relative;}
-.bioimgbx:before{
-	content: '';
-    position: absolute;
-    background: url(../images/key-people/key-tick.svg) no-repeat;
-    width: 589px;
-    height: 489px;
-    z-index: -1;
-    left: -164px;
-    bottom: 0;
-}
-.bioimgbx img {width:auto; height:100%; object-fit:cover;}
-.biotxtbx {flex: 1 1 18%; margin-bottom:50px;}
+.bioimgbx img {width:auto;}
+.biotxtbx {flex: 1 1 18%; margin-bottom:0;}
 .biotxtbx h1{
 	background:#2E6D99;
 	font-size:20px;
@@ -1323,6 +1313,18 @@ p.pargraptxt{color:#000; text-align:center; font-weight:600;}
     .scndtxtbx {border-radius: 100px 0 100px 0; margin-bottom:15px; padding:70px 50px;}
 	.exprtsbx{flex: 1 100%; padding: 35px 35px;}
 	.investmntsctn .upprcntnr .upprcntnrbx { flex: 1 46%;}
+	.mngmntsctnbx{flex: 0 47%;}
+	.upprcntnr .bluebx{
+		-webkit-border-bottom-left-radius: 0;
+        -moz-border-radius-bottomleft: 0;
+        border-bottom-left-radius: 0;
+        -webkit-border-top-right-radius: 0;
+        -moz-border-radius-topright: 0;
+        border-top-right-radius:0;
+		-webkit-border-bottom-left-radius:50px;
+        -moz-border-radius-bottomleft:50px;
+        border-bottom-left-radius:50px;
+	}
 }
 @media screen and (max-width:767px){
 	.fundbx{flex: 1 47%;}
