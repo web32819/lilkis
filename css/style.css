@@ -1366,6 +1366,18 @@ p.pargraptxt{color:#000; text-align:center; font-weight:600;}
 	.form-box{margin: 15px 0;}
 	.phlosphybx {flex: 1 47%;}
 	.keyppl-content{padding:0;}
+	.upprcntnrbx{flex:1 51%;}
+	.fund .bluebx{
+		 -webkit-border-bottom-left-radius: 0;
+        -moz-border-radius-bottomleft: 0;
+        border-bottom-left-radius: 0;
+        -webkit-border-top-right-radius: 50px;
+        -moz-border-radius-topright:50px;
+        border-top-right-radius: 50px;
+        -webkit-border-bottom-left-radius: 0;
+        -moz-border-radius-bottomleft:0px;
+        border-bottom-left-radius:0px;
+	}
 }
 @media (max-width:414px){}
 @media (max-width:394px){}
