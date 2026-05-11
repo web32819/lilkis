@@ -141,8 +141,8 @@ a:focus, a:hover {
     bottom: -6px;
 }
 .nav.navbar-nav li.active a {
-    color: #2E6D99;                          /* change to your color */
-    border-bottom: 4px solid #6DAA43;        /* underline style */
+    color: #2E6D99 !important;                         
+    border-bottom: 4px solid #6DAA43;
 	background-color:transparent ;
 }
 .nav.navbar-nav li.active a:hover{background-color:transparent;}
