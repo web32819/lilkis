@@ -258,12 +258,9 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .sidebar a:focus{background-color:#2f6f97; color:#FFF;}
 .sidebar a img{padding:0; outline:none;}
 .sidebar .closebtn {
-	color:#009fff;
     border-bottom: none;
     margin-left: 0;
     padding: 0;
-    font-size: 50px;
-    font-weight: 300;
     position: absolute;
     top:25px;
     right: 17px;
@@ -271,9 +268,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     outline: none;
     border: none;
 }
-.closebtn a svg{
-	fill:#000;
-}
+.closebtn svg{fill:#83ba5a; height:30px;}
 .sidebar .closebtn:hover{background-color:transparent;}
 .openbtn {
     cursor:pointer;
@@ -298,7 +293,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
     right: 0;
 }
 #main svg{
-	fill: #171717;
+	fill:#2f6f97;
     height: 25px;
     margin-right:25px;
     position: relative;
@@ -359,7 +354,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 .panel ul li a:hover {color:#164BA0; background:#EBF8FF;}
 .panel ul li a:focus {color:#164BA0; background:#EBF8FF;}
 .panel ul li a:active {color:#164BA0; background:#EBF8FF;}
-.sidebar .sclbox{padding:20px 0;}
+.sidebar .sclbox{padding:20px 0; border-bottom: 1px solid #dadada;}
 .sidebar .sclbox a{border-bottom:none; padding:0; margin-top: 0;}
 .sidebar .sclbox a img{}
 .sidebar .fllwbox{padding:40px 25px;}
