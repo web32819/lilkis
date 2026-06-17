@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
     if (mail($mail_to, $subject, $body_message, $headers)) {
-        header("Location: thank-you.html");
+        header("Location: /thank-you");
         exit;
     } else {
         exit("Error sending email.");

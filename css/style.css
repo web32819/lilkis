@@ -229,7 +229,7 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	width:100%; 
 	top:0;
 }
-.mobile-header.scrolled{}
+.mobile-header.scrolled{padding:10px 0;}
 .sidebar {
 	height: 100%;
 	width: 0;
