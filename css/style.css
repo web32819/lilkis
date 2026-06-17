@@ -939,7 +939,6 @@ hr.brdrsctn{border-top: 1px solid #D1F2F1; margin-top:40px; margin-bottom:40px;}
 	border-bottom:1px solid rgba(255,255,255,.30);
 	padding-bottom:30px; 
 	transition: border-bottom-color 0.4s ease; /* smooth animation */
-	cursor:pointer;
 }
 .blusctnbx h3{text-align:left; color:#FFF; font-weight:600; font-size:24px;}
 .blusctnbx p{color:#A1D8FF; font-size:18px; line-height:42px;}
